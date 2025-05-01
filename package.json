@@ -1,0 +1,14 @@
+{
+	"main": "./src/index.ts",
+	"scripts": {
+		"start": "ts-node ."
+	},
+	"dependencies": {
+		"@types/koa": "^2.15.0",
+		"axios": "^1.9.0",
+		"koa": "^3.0.0",
+		"zod": "^3.24.3",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	}
+}
