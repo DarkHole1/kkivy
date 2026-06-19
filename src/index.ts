@@ -143,7 +143,7 @@ app.use(async (ctx) => {
   const path = ctx.request.path;
 
   if (!ctx.header["user-agent"]?.includes("TelegramBot")) {
-    ctx.redirect(`https://kknights.com${path}`);
+    ctx.redirect(`https://next.kknights.com${path}`);
     return;
   }
 
@@ -167,7 +167,7 @@ app.use(async (ctx) => {
     }
   }
 
-  ctx.redirect(`https://kknights.com${path}`);
+  ctx.redirect(`https://next.kknights.com${path}`);
 });
 
 app.listen(process.env.PORT ?? 9980);
