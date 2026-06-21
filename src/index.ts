@@ -142,6 +142,12 @@ const displayShout = async (id: string) => {
 app.use(async (ctx) => {
   const path = ctx.request.path;
 
+  console.log(
+    'Getting request for "%s" from "%s',
+    path,
+    ctx.header["user-agent"],
+  );
+
   if (!ctx.header["user-agent"]?.includes("TelegramBot")) {
     ctx.redirect(`https://next.kknights.com${path}`);
     return;
